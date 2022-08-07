@@ -1,0 +1,344 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Edu SA Beginner', cursive;
+}
+
+header{
+    background-color:palevioletred;
+}
+
+a{
+    text-decoration: none;
+    color:beige;
+}
+
+body{
+    background-color:antiquewhite;
+}
+
+.principal {
+    color:palevioletred;
+}
+
+.enlaceExterno{
+    color: palevioletred;
+}
+
+h1{
+    color: palevioletred;
+}
+
+p{
+    color: palevioletred;
+}
+
+footer{
+    background-color: palevioletred;
+}
+
+header{
+    width: 100%;
+}
+
+footer{
+    width:100%;
+}
+
+iframe{
+    width: 100%;
+}
+
+.foto{
+    width: 100%;
+}
+
+/*mobile*/
+
+*{
+    font-size:1em;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+.redes{
+    display: flex;
+    justify-content:right;
+}
+
+.sinEstilo{
+    list-style: none;
+}
+
+.primero{
+    grid-area: primero;     
+    text-align: center; 
+}
+
+.segundo{
+    grid-area: segundo; 
+    text-align: center;   
+} 
+
+.principal{
+    margin: 1rem 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 1rem;
+    grid-template-areas: 'primero'
+                         'segundo';
+}
+
+.uno{
+    grid-area: uno;
+    text-align: center;
+}
+
+.dos{
+    grid-area: dos;
+    text-align: center;     
+}
+
+.tres{
+    grid-area: tres;
+    text-align: center;      
+}
+
+.adoptables{
+    margin: 1rem 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 1rem;
+    grid-template-areas: 'uno'
+                         'dos'
+                         'tres';
+    color: palevioletred;
+} 
+
+.mascotas{
+    grid-area: mascotas;
+    text-align: left;
+}
+
+.hospital{
+    grid-area: hospital;
+    text-align: left;       
+}
+
+.copocan{
+    grid-area: copocan;
+    text-align: left;     
+}  
+
+.servicios{
+    margin: 1rem 1rem;
+    color:palevioletred
+}
+
+.denunciado1{
+    grid-area: den1;
+    text-align: left;
+}
+
+.denunciado2{
+    grid-area: den2;
+    text-align: left;
+}
+.denunciados{
+    margin: 1rem 1rem;   
+    color:palevioletred
+}
+
+.nombre{
+    grid-area: nombre;
+}
+
+.email{
+    grid-area: email;
+}
+
+.observaciones{
+    grid-area: obs;
+}
+
+.caja{
+    grid-area: caja;
+}
+
+.botones{
+    grid-area:botones;
+}
+
+.formulario{
+    margin: 1rem 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 1rem;
+    grid-template-areas: 'nombre obs'
+                         'email obs'
+                         'caja caja'
+                         'botones botones';
+    color: palevioletred;
+}
+
+/*tablet*/
+@media screen and (min-width:600px){
+    *{
+        font-size:1em;
+    }
+    
+    header{
+        padding: 5%;
+    }
+
+    nav ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    
+    .redes{
+        display: flex;
+        justify-content:right;
+    }
+
+    .sinEstilo{
+        list-style: none;
+    }    
+
+    .principal{
+        margin: 1rem 1rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        gap: 1rem;
+        grid-template-areas: 'primero segundo';
+    }    
+
+    .adoptables{
+        margin: 1rem 1rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: auto;
+        gap: 1rem;
+        grid-template-areas: 'uno dos'
+                             'tres cuatro';
+        color: palevioletred;
+    }  
+
+    .servicios{
+        margin: 1rem 1rem;
+        display:grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: auto;
+        gap: 1rem;
+        grid-template-areas: 'mascotas' 
+                             'hospital'
+                             'copocan';
+        color: palevioletred;        
+
+    }
+ 
+    .denunciados{
+        margin: 1rem 1rem;
+        display:grid;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: auto;
+        gap: 1rem;
+        grid-template-areas: 'den1 den2';
+        color: palevioletred;        
+
+    }
+    .formulario{
+        margin: 1rem 1rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        gap: 1rem;
+        grid-template-areas: 'nombre obs caja'
+                             'email obs botones';
+        color: palevioletred;
+    }
+}
+
+@media screen and (min-width:800px){
+    *{
+        font-size:20px;
+    }
+}
+
+/*desktop*/
+@media screen and (min-width:1024px)
+{
+    *{
+        font-size: 25px;
+    }
+
+    header{
+        padding: 5%;
+    }
+
+    nav ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    
+    .redes{
+        display: flex;
+        justify-content:right;
+    }
+    
+    .sinEstilo{
+        list-style: none;
+    }
+
+    .principal{
+        margin: 1rem 1rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: auto;
+        gap: 1rem;
+        grid-template-areas: 'primero segundo';
+    }    
+
+    .adoptables{
+        margin: 1rem 1rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr ;
+        grid-template-rows: auto;
+        gap: 1rem;
+        grid-template-areas: 'uno dos tres';
+        color: palevioletred;
+    }    
+
+    .servicios{
+        margin: 1rem 1rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: auto;
+        gap: 1rem;
+        grid-template-areas: 'mascotas hospital'
+                             'copocan otro';
+        color: palevioletred;
+    }  
+
+    .denunciados{
+        margin: 1rem 1rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        gap: 1rem;
+        grid-template-areas: 'den1 den2';
+        color: palevioletred;
+    } 
+
+}
