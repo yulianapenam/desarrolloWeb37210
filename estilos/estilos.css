@@ -91,8 +91,7 @@ nav ul{
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     gap: 1rem;
-    grid-template-areas: 'primero'
-                         'segundo';
+    grid-template-areas: 'primero';
 }
 
 .uno{
@@ -217,10 +216,10 @@ nav ul{
     .principal{
         margin: 1rem 1rem;
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         grid-template-rows: auto;
         gap: 1rem;
-        grid-template-areas: 'primero segundo';
+        grid-template-areas: 'primero';
     }    
 
     .adoptables{
@@ -304,10 +303,10 @@ nav ul{
     .principal{
         margin: 1rem 1rem;
         display: grid;
-        grid-template-columns: 1fr 1fr ;
+        grid-template-columns: 1fr;
         grid-template-rows: auto;
         gap: 1rem;
-        grid-template-areas: 'primero segundo';
+        grid-template-areas: 'primero';
     }    
 
     .adoptables{
@@ -340,5 +339,71 @@ nav ul{
         grid-template-areas: 'den1 den2';
         color: palevioletred;
     } 
+
+    a{
+        transition: font-size 1s;
+    }
+
+    a:hover{
+        font-size: 30px;
+    }
+
+    a:focus{
+        font-size: 30px;
+    }
+
+    input{
+        transition: all 1s;
+    }
+
+    input:hover{
+        height:50px;
+        font-size: 30px;
+    }
+
+    input:focus{
+        height:50px;
+        font-size: 30px;
+    }
+
+    textarea{
+        transition:all 1s;
+    }
+
+    textarea:hover{
+        height: 300px;
+        width: 500px ;
+        font-size: 30px;
+    }
+
+    textarea:focus{
+        height: 300px;
+        width: 500px ;
+        font-size: 30px;
+    }
+
+    .check{
+        transition: all 1s;
+    }
+
+    .check:hover{
+        height:15px;
+    }   
+    
+    .check:focus{
+        height:15px;
+    }   
+
+    .foto{
+        width: 300px;
+        height:300px;
+        transition: all 1s;
+    }
+
+    .foto:hover{
+        width: 400px;
+        height:400px;
+    }
+
 
 }
