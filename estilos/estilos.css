@@ -184,10 +184,11 @@ nav ul{
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     gap: 1rem;
-    grid-template-areas: 'nombre obs'
-                         'email obs'
-                         'caja caja'
-                         'botones botones';
+    grid-template-areas: 'nombre'
+                         'email'
+                         'obs'
+                         'caja'
+                         'botones';
     color: palevioletred;
 }
 
@@ -255,16 +256,7 @@ nav ul{
         color: palevioletred;        
 
     }
-    .formulario{
-        margin: 1rem 1rem;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: auto;
-        gap: 1rem;
-        grid-template-areas: 'nombre obs caja'
-                             'email obs botones';
-        color: palevioletred;
-    }
+
 }
 
 @media screen and (min-width:800px){
@@ -292,7 +284,7 @@ nav ul{
     
     .redes{
         display: flex;
-        justify-content:right;
+        justify-content:space-between;
     }
     
     .principal{
@@ -328,12 +320,24 @@ nav ul{
     .denunciados{
         margin: 1rem 1rem;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
         grid-template-rows: auto;
         gap: 1rem;
         grid-template-areas: 'den1 den2';
         color: palevioletred;
     } 
+
+    .formulario{
+        margin: 1rem 1rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: auto;
+        gap: 1rem;
+        grid-template-areas: 'nombre caja '
+                             'email botones '
+                             'obs botones';
+        color: palevioletred;
+    }
 
     .inputText{
         transition: all 1s;
@@ -363,5 +367,5 @@ nav ul{
 
 .navDisplay{
     display: flex;
-    justify-content:end;
+    justify-content:space-around;
 }
