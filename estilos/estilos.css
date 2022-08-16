@@ -362,6 +362,7 @@ nav ul{
 
     a:focus, a:hover{
         border-bottom: 1px solid;
+        color:palevioletred;
     }
 }
 
