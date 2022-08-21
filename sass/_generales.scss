@@ -1,0 +1,34 @@
+/*generales*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    width: 100%;
+}
+
+footer{
+    width:100%;
+}
+
+iframe{
+    width: 100%;
+}
+
+.foto{
+    width: 100%;
+}
+
+.sinEstilo{
+    list-style: none;
+}
+
+.navDisplay{
+    justify-content:space-around;
+}

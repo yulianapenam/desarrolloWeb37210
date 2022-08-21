@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+* {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+$fontSize1:15px;
+$fontSize2:20px;
+$fontSize3:25px;
+
+/*mobile*/
+*{
+    font-size:$fontSize1;
+}
+
+/*desktop*/
+@media screen and (min-width:800px){
+    *{
+        font-size:$fontSize2;
+    }
+}
+
+@media screen and (min-width:1024px)
+{
+    *{
+        font-size: $fontSize3;
+    }
+}

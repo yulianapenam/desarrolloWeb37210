@@ -1,0 +1,44 @@
+$principal: palevioletred;
+$fondo: antiquewhite;
+/*colores*/
+header{
+    background-color:$principal;
+}
+
+body{
+    background-color:$fondo;
+}
+
+.principal {
+    color:$principal;
+}
+
+.enlaceExterno{
+    color: $principal;
+}
+
+h1, h5{
+    color: $principal;
+}
+
+p{
+    color: $principal;
+}
+
+footer{
+    background-color: $principal;
+}
+
+.sinEstilo{
+    color:$principal;
+}
+
+.formulario{
+    color:$principal;
+}
+
+a{
+    &:focus, &:hover{
+        color:$principal;
+    }
+}
