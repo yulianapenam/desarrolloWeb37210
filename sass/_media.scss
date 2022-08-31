@@ -1,3 +1,8 @@
+@mixin espaciado($tamano){
+    margin: $tamano $tamano;
+    gap: $tamano;
+}
+
 /*areas del formulario*/
 .nombre{
     grid-area: nombre;
@@ -22,11 +27,10 @@
 /*mobile*/
 
 .formulario{
-    margin: 1rem 1rem;
+    @include espaciado(1rem);
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
-    gap: 1rem;
     grid-template-areas: 'nombre'
                          'email'
                          'obs'
@@ -46,19 +50,21 @@
 /*desktop*/
 @media screen and (min-width:1024px)
 {
+    %animacion{
+        transition: all 1s;
+    }
     .formulario{
-        margin: 1rem 1rem;
+        @include espaciado(1rem);
         display: grid;
         grid-template-columns: 1fr 1fr ;
         grid-template-rows: auto;
-        gap: 1rem;
         grid-template-areas: 'nombre caja '
                              'email botones '
                              'obs botones';
     }
 
     .inputText{
-        transition: all 1s;
+        @extend %animacion;
         &:focus
         {
             width: 100%;
@@ -66,7 +72,7 @@
     }
 
     textarea{
-        transition:all 1s;
+        @extend %animacion;
         &:focus
         {
             height: 100%; 
@@ -75,7 +81,7 @@
     }
 
     a{
-        transition: all 1s;
+        @extend %animacion;
         &:focus,&:hover{
             border-bottom: 1px solid;
         }
