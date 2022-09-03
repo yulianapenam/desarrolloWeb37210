@@ -1,41 +1,41 @@
 @mixin espaciado($tamano){
     margin: $tamano $tamano;
-    gap: $tamano;
-}
-
-/*areas del formulario*/
-.nombre{
-    grid-area: nombre;
-}
-
-.email{
-    grid-area: email;
-}
-
-.observaciones{
-    grid-area: obs;
-}
-
-.caja{
-    grid-area: caja;
-}
-
-.botones{
-    grid-area:botones;
 }
 
 /*mobile*/
+%animacion{
+    transition: all 1s;
+}
+
+.inputText{
+    @extend %animacion;
+    &:focus
+    {
+       border: 1px;
+    }
+}
+
+textarea{
+    height: 150px;
+    @extend %animacion;
+    &:focus
+    {
+        border: 1px;
+    }
+}
+
+a{
+    @extend %animacion;
+    &:focus,&:hover{
+        border-bottom: 1px solid;
+    }
+}
 
 .formulario{
+    width: 50%;
     @include espaciado(1rem);
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    grid-template-areas: 'nombre'
-                         'email'
-                         'obs'
-                         'caja'
-                         'botones';
+    display: flex;
+    flex-direction:column;
 }
 
 /*tablet*/
@@ -44,47 +44,18 @@
     header{
         padding: 3%;
     }
-  
+
+    textarea{
+        height: 300px;
+    }  
 }
 
 /*desktop*/
 @media screen and (min-width:1024px)
 {
-    %animacion{
-        transition: all 1s;
-    }
-    .formulario{
-        @include espaciado(1rem);
-        display: grid;
-        grid-template-columns: 1fr 1fr ;
-        grid-template-rows: auto;
-        grid-template-areas: 'nombre caja '
-                             'email botones '
-                             'obs botones';
-    }
-
-    .inputText{
-        @extend %animacion;
-        &:focus
-        {
-            width: 100%;
-        }
-    }
 
     textarea{
-        @extend %animacion;
-        &:focus
-        {
-            height: 100%; 
-            width: 100% ;
-        }
+        height: 450px;
     }
-
-    a{
-        @extend %animacion;
-        &:focus,&:hover{
-            border-bottom: 1px solid;
-        }
-    }
-    
+   
 }

@@ -95,35 +95,31 @@ iframe {
   justify-content: space-around;
 }
 
-/*areas del formulario*/
-.nombre {
-  grid-area: nombre;
-}
-
-.email {
-  grid-area: email;
-}
-
-.observaciones {
-  grid-area: obs;
-}
-
-.caja {
-  grid-area: caja;
-}
-
-.botones {
-  grid-area: botones;
-}
-
 /*mobile*/
+a, textarea, .inputText {
+  transition: all 1s;
+}
+
+.inputText:focus {
+  border: 1px;
+}
+
+textarea {
+  height: 150px;
+}
+textarea:focus {
+  border: 1px;
+}
+
+a:focus, a:hover {
+  border-bottom: 1px solid;
+}
+
 .formulario {
+  width: 50%;
   margin: 1rem 1rem;
-  gap: 1rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto;
-  grid-template-areas: "nombre" "email" "obs" "caja" "botones";
+  display: flex;
+  flex-direction: column;
 }
 
 /*tablet*/
@@ -131,28 +127,13 @@ iframe {
   header {
     padding: 3%;
   }
+  textarea {
+    height: 300px;
+  }
 }
 /*desktop*/
 @media screen and (min-width: 1024px) {
-  a, textarea, .inputText {
-    transition: all 1s;
-  }
-  .formulario {
-    margin: 1rem 1rem;
-    gap: 1rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    grid-template-areas: "nombre caja " "email botones " "obs botones";
-  }
-  .inputText:focus {
-    width: 100%;
-  }
-  textarea:focus {
-    height: 100%;
-    width: 100%;
-  }
-  a:focus, a:hover {
-    border-bottom: 1px solid;
+  textarea {
+    height: 450px;
   }
 }/*# sourceMappingURL=style.css.map */
