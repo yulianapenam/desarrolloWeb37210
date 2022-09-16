@@ -1,5 +1,5 @@
-$principal: palevioletred;
-$fondo: antiquewhite;
+$principal:#45B39D;
+$fondo: #E8F6F3;
 /*colores*/
 header{
     background-color:$principal;
@@ -17,7 +17,7 @@ body{
     color: $principal;
 }
 
-h1, h5{
+h1,h2,h3,h4,h5,h6{
     color: $principal;
 }
 

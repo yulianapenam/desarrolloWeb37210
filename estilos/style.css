@@ -21,43 +21,43 @@
 }
 /*colores*/
 header {
-  background-color: palevioletred;
+  background-color: #45B39D;
 }
 
 body {
-  background-color: antiquewhite;
+  background-color: #E8F6F3;
 }
 
 .principal {
-  color: palevioletred;
+  color: #45B39D;
 }
 
 .enlaceExterno {
-  color: palevioletred;
+  color: #45B39D;
 }
 
-h1, h5 {
-  color: palevioletred;
+h1, h2, h3, h4, h5, h6 {
+  color: #45B39D;
 }
 
 p {
-  color: palevioletred;
+  color: #45B39D;
 }
 
 footer {
-  background-color: palevioletred;
+  background-color: #45B39D;
 }
 
 .sinEstilo {
-  color: palevioletred;
+  color: #45B39D;
 }
 
 .formulario {
-  color: palevioletred;
+  color: #45B39D;
 }
 
 a:focus, a:hover {
-  color: palevioletred;
+  color: #45B39D;
 }
 
 /*generales*/
